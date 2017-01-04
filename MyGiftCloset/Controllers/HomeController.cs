@@ -19,6 +19,7 @@ namespace MyGiftCloset.Controllers
                 database.Database.Log = (message) => Debug.WriteLine(message);
                 var gifts = database.Gifts
                     .Include(g => g.Holiday)
+                    .Include(g => g.Recipient)
                     .ToList();
 
 

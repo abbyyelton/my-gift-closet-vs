@@ -22,3 +22,7 @@ select,
 textarea {
     max-width: 280px;
 }
+
+.gift-header {
+    color: #009871;
+}

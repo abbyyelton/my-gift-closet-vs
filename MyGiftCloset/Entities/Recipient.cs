@@ -18,6 +18,8 @@ namespace MyGiftCloset.Entities
         [Required, StringLength(100)]
         public string Name { get; set; }
 
+        [DisplayFormat(DataFormatString = "{0:yyyy-MM-dd}", ApplyFormatInEditMode = true)]
+        [DataType(DataType.Date)]
         public DateTime? Birthday { get; set; }
 
         ICollection<Gift> Gifts { get; set; }
